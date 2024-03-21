@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Просмотр фильма</title>
+    <style>
+        .spoiler {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .spoiler-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleSpoiler(spoilerId) {
+            var spoilerContent = document.getElementById(spoilerId);
+            if (spoilerContent.style.display === "none") {
+                spoilerContent.style.display = "block";
+            } else {
+                spoilerContent.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+
+    
+	<h1>Нюрнберг / Уроки истории / МИНАЕВ (English subtitles) </h1>
+    <p>Описание фильма...</p>
+    <!-- Вставка спойлера -->
+    <div class="spoiler" onclick="toggleSpoiler('spoilerContent')">Показать/скрыть видео</div>
+    <div id="spoilerContent" class="spoiler-content">
+        <!-- Вставка видео с YouTube -->
+        <iframe width="1035" height="582" src="https://www.youtube.com/embed/9gd_BwAiyrg" title="Нюрнберг / Уроки истории / МИНАЕВ (English subtitles)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+    </div>
+	
+	<h1>Булгаков / Зависимость, мистика и Сталин в жизни Мастера </h1>
+    <p>Описание фильма...</p>
+    <!-- Вставка спойлера -->
+    <div class="spoiler" onclick="toggleSpoiler('spoilerContent2')">Показать/скрыть видео</div>
+    <div id="spoilerContent2" class="spoiler-content">
+        <!-- Вставка видео с YouTube -->
+       <iframe width="1035" height="582" src="https://www.youtube.com/embed/hMIFmrH6GPs" title="Булгаков / Зависимость, мистика и Сталин в жизни Мастера / ЛИЧНОСТИ / @MINAEVLIVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+    </div>
+	
+</body>
+</html>
+
+
